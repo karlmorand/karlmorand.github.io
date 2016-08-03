@@ -39,6 +39,7 @@ nav li {
 	display: inline;
 	padding: 30px;
 	font-family: Courier, monospace;
+	font-size: 1.2em;
 }
 nav li a {
 	text-decoration: none;
@@ -75,4 +76,16 @@ h1, h2, h3, h4 {
 }
 p {
 	margin-bottom: 0;
+}
+
+#techskills li {
+	font-family: Courier, monospace;
+	display: inline-block;
+	background-color: rgba(250, 6, 6, 0.66);
+	margin: 8px;
+	padding: 8px;
+	color: white;
+}
+img {
+	max-height: 40vh;
 }
