@@ -4,16 +4,24 @@ body {
 p {
   padding: 0 5%;
 }
-img {
+.hide-mobile {
   display: none;
 }
 h1, h2, h3, h4 {
 	font-family: Courier, monospace;
 	text-align: center;
 }
+h1 {
+  font-size: 5em;
+}
+h3 {
+  font-size: 4em;
+  padding: 0;
+  margin: 0;
+}
 #logo {
   text-align: center;
-	font-size: 5em;
+	font-size: 7em;
 	font-family: Courier, monospace;
 	color: black;
 }
@@ -29,7 +37,28 @@ h1, h2, h3, h4 {
   font-size: 3em;
 	display: inline-block;
 	background-color: rgba(250, 6, 6, 0.66);
-	margin: 8px;
-	padding: 8px;
+	margin: 1%;
+	padding: 3%;
 	color: white;
+}
+#techskills {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.box {
+	background-color: rgba(241, 237, 225, 1);
+	margin: 5% 0;
+	padding: 2% 0;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10%;
+}
+ul {
+margin-left: 8%;
+}
+li {
+  padding: .5% 0;
 }
