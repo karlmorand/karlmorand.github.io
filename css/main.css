@@ -37,7 +37,8 @@ h3 {
 	font-size: 1.5em;
   text-align: center;
 	background-color: rgba(250, 6, 6, 0.66);
-	padding: 1% 3%;
+	padding: .5% 3%;
+  margin: 0 0 2% 0;
 }
 #techskills li {
 	font-family: Courier, monospace;
