@@ -1,88 +1,103 @@
-/** {
-	margin:0;
-	padding: 0;
-}*/
-
+@import 'https://fonts.googleapis.com/css?family=Raleway';
 body {
-	background-color: #FDF6E3;
-	/*max-width: 800px;
-	margin: 0 auto;*/
-	padding-top: 70px;
-}
-header {
-	background: #FDF6E3;
-	height: 70px;
-	position: fixed;
-	top: 0;
-	transition: top 0.5s ease-in-out;
-	width: 100%;
-}
-.nav-up {
-	top: -70px;
+    background-color: #FDF6E3;
 }
 
-#logo {
-	float: left;
-	font-size: 3em;
-	font-family: Courier, monospace;
-	color: black;
-
+img {
+    max-width: 100%
 }
 
-nav ul {
-	list-style: none;
-	text-align: center;
-	padding: 10px;
-	margin-top: 10px;
-}
-nav li {
-	display: inline;
-	padding: 30px;
-	font-family: Courier, monospace;
-	font-size: 1.2em;
-}
-nav li a {
-	text-decoration: none;
-	color: black;
+p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.2em;
+    padding: 0 5%;
 }
 
-
-.box {
-	background-color: rgba(241, 237, 225, 1);
-	margin: 10px;
-	padding: 25px;
-}
-
-#brand {
-	font-family: Courier, monospace;
-	font-size: 1.5em;
-	background-color: rgba(250, 6, 6, 0.66);
-	padding: 0 3px;
-}
-h1 {
-	text-decoration: underline;
+.hide-mobile {
+    display: none;
 }
 
 h1, h2, h3, h4 {
-	font-family: Courier, monospace;
-	text-align: center;
+    font-family: Courier, monospace;
+    text-align: center;
 }
 
-.contact {
-	text-align: center;
+h1 {
+    font-size: 3em;
 }
-p {
-	margin-bottom: 0;
+
+h3 {
+    font-size: 2em;
+    padding: 0 0 2% 0;
+    margin: 0;
+}
+
+#logo {
+    text-align: center;
+    font-size: 4em;
+    font-family: Courier, monospace;
+    color: black;
+}
+
+#brand-text {
+    font-family: Courier, monospace;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgba(250, 6, 6, 0.66);
+    padding: .5% 3%;
+    margin: 0 0 2% 0;
 }
 
 #techskills li {
-	font-family: Courier, monospace;
-	display: inline-block;
-	background-color: rgba(250, 6, 6, 0.66);
-	margin: 8px;
-	padding: 8px;
-	color: white;
+    font-family: Courier, monospace;
+    font-size: 1.2em;
+    display: inline-block;
+    background-color: rgba(250, 6, 6, 0.66);
+    margin: 1%;
+    padding: 2%;
+    color: white;
 }
-img {
-	max-height: 40vh;
+
+#techskills {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.box {
+    background-color: rgba(241, 237, 225, 1);
+    margin: 5% 0;
+    padding: 2% 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+
+ul {
+    margin-left: 8%;
+}
+
+li {
+    padding: .5% 0;
+}
+
+@media all and (min-width: 500px) {
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 3%;
+    }
+    #techskills li {
+        padding: 1%;
+    }
+    img {
+      max-width: 60%;
+      display: block;
+      margin: 0 auto;
+    }
+    .project {
+    }
 }
