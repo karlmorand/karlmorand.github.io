@@ -1,72 +1,103 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
-
 body {
-  background-color: #FDF6E3;
+    background-color: #FDF6E3;
 }
+
 img {
-  max-width: 100vw;
+    max-width: 100%
 }
+
 p {
-  font-family: 'Raleway', sans-serif;
-  line-height: 1.2em;
-  padding: 0 5%;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.2em;
+    padding: 0 5%;
 }
+
 .hide-mobile {
-  display: none;
+    display: none;
 }
+
 h1, h2, h3, h4 {
-	font-family: Courier, monospace;
-	text-align: center;
+    font-family: Courier, monospace;
+    text-align: center;
 }
+
 h1 {
-  font-size: 5em;
+    font-size: 3em;
 }
+
 h3 {
-  font-size: 4em;
-  padding: 0 0 2% 0;
-  margin: 0;
+    font-size: 2em;
+    padding: 0 0 2% 0;
+    margin: 0;
 }
+
 #logo {
-  text-align: center;
-	font-size: 7em;
-	font-family: Courier, monospace;
-	color: black;
+    text-align: center;
+    font-size: 4em;
+    font-family: Courier, monospace;
+    color: black;
 }
+
 #brand-text {
-	font-family: Courier, monospace;
-	font-size: 1.5em;
-  text-align: center;
-	background-color: rgba(250, 6, 6, 0.66);
-	padding: .5% 3%;
-  margin: 0 0 2% 0;
+    font-family: Courier, monospace;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgba(250, 6, 6, 0.66);
+    padding: .5% 3%;
+    margin: 0 0 2% 0;
 }
+
 #techskills li {
-	font-family: Courier, monospace;
-  font-size: 3em;
-	display: inline-block;
-	background-color: rgba(250, 6, 6, 0.66);
-	margin: 1%;
-	padding: 3%;
-	color: white;
+    font-family: Courier, monospace;
+    font-size: 1.2em;
+    display: inline-block;
+    background-color: rgba(250, 6, 6, 0.66);
+    margin: 1%;
+    padding: 2%;
+    color: white;
 }
+
 #techskills {
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
+
 .box {
-	background-color: rgba(241, 237, 225, 1);
-	margin: 5% 0;
-	padding: 2% 0;
+    background-color: rgba(241, 237, 225, 1);
+    margin: 5% 0;
+    padding: 2% 0;
 }
+
 .contact {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 10%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10%;
 }
+
 ul {
-margin-left: 8%;
+    margin-left: 8%;
 }
+
 li {
-  padding: .5% 0;
+    padding: .5% 0;
+}
+
+@media all and (min-width: 500px) {
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 3%;
+    }
+    #techskills li {
+        padding: 1%;
+    }
+    img {
+      max-width: 60%;
+      display: block;
+      margin: 0 auto;
+    }
+    .project {
+    }
 }

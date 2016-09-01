@@ -16,44 +16,55 @@
 	</header>
 
 
-<div class="main-row">
-	<div class="profile">
-	<img id="profile" src="img/kjm.jpg" alt="Picture of Karl Morand" class="hide-mobile"/>
-	</div>
-		<p id="brand-text">
-			Team-focused back end developer eager to solve problems. I relish interesting and unexpected challenges and view complex problems as an opportunity to grow as a developer.
-		</p>
+	<div class="narrow-row">
+		<!-- <img class="img-wide" id="profile" src="img/kjm.jpg" alt="Picture of Karl Morand"/> -->
 
-</div>
-	<h3>Technical Skills</h3>
-<ul id="techskills">
-	<li>Javascript</li>
-	<li>HTML5</li>
-	<li>CSS3</li>
-	<li>MEAN Stack</li>
-	<li>Ruby on Rails</li>
-	<li>MongoDB</li>
-	<li>Angular</li>
-	<li>Express</li>
-	<li>PostgreSQL</li>
-	<li>Node.js</li>
-	</ul>
+		<div class="flex-item">
 
-	<h1 id="projects">Projects</h1>
-	<div class="box">
-		<h3><a href="https://tumtum-tracker.herokuapp.com/">Job Tracker</a></h3>
-		<img src="img/jobtrack.png" alt="Job Tracker App"/>
-		<p>
-			MEAN stack app that uses <a href="https://developer.linkedin.com/docs/signin-with-linkedin">LinkedIn's JavaScript SDK</a> for user authentication and the GitHub Jobs API for job search. The app allows users to search for jobs, save jobs they're interested
-			in, as well as track to-do's related to their job search and relevant data such as their brand statement and resume. This was a partner project that required extensive collaboration via GitHub, Slack, Trello, and pair-programming over video chat.
-		</p>
+			<p id="brand-text">
+				Team-focused back end developer eager to solve problems. I relish interesting and unexpected challenges and view complex problems as an opportunity to grow as a developer.
+			</p>
+		</div>
+
+		<div class="flex-item">
+			<ul id="techskills">
+				<li>Javascript</li>
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>MEAN Stack</li>
+				<li>Ruby on Rails</li>
+				<li>MongoDB</li>
+				<li>Angular</li>
+				<li>Express</li>
+				<li>PostgreSQL</li>
+				<li>Node.js</li>
+			</ul>
+		</div>
 	</div>
-	<div class="box">
-		<h3><a href="https://forum-proj.herokuapp.com/posts/">Forum</a></h3>
-		<img src="img/forum.png" alt="Forum App" />
-		<p>
-			Forum that allows users to securely create an account, make new posts, comment on other people's posts, and 'like' posts. Guests can see the content but they can't create content. The database is MongoDB and bcrypt is used for password encryption.
-		</p>
+
+	<h1>Projects</h1>
+	<div class="projcont">
+		<div class="box project">
+			<div class="flex-head">
+				<h3><a href="https://tumtum-tracker.herokuapp.com/">Job Tracker</a></h3>
+			</div>
+			<img class="proj-img" src="img/jobtrack.png" alt="Job Tracker App" />
+			<div class="proj-desc">
+				<p>
+					MEAN stack app that uses <a href="https://developer.linkedin.com/docs/signin-with-linkedin">LinkedIn's JavaScript SDK</a> for user authentication and the GitHub Jobs API for job search. The app allows users to search for jobs, save jobs they're interested
+					in, as well as track to-do's related to their job search and relevant data such as their brand statement and resume. This was a partner project that required extensive collaboration via GitHub, Slack, Trello, and pair-programming over video chat.
+				</p>
+			</div>
+		</div>
+		<div class="box project">
+			<h3><a href="https://forum-proj.herokuapp.com/posts/">Forum</a></h3>
+				<img class="proj-img" src="img/forum.png" alt="Forum App" />
+				<div class="proj-desc">
+					<p>
+						Forum that allows users to securely create an account, make new posts, comment on other people's posts, and 'like' posts. Guests can see the content but they can't create content. The database is MongoDB and bcrypt is used for password encryption.
+					</p>
+			</div>
+		</div>
 	</div>
 
 	<h1 id="experience">Experience</h1>
@@ -97,8 +108,6 @@
 		<a href="https://twitter.com/karlmorand"><img src="img/png/twitter-logo-button.png" alt="" /></a>
 		<a href="mailto:karljmorand@gmail.com"><img src="img/png/email.png" alt="" /></a>
 	</div>
-	<script type="text/javascript" src="app.js">
-	</script>
 </body>
 
 </html>
