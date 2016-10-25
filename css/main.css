@@ -48,7 +48,7 @@ h3 {
     margin: 0 0 2% 0;
 }
 
-#techskills li {
+.highlight-list li {
     font-family: Courier, monospace;
     font-size: 1.2em;
     display: inline-block;
@@ -58,7 +58,7 @@ h3 {
     color: white;
 }
 
-#techskills {
+.highlight-list {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -90,7 +90,7 @@ li {
         margin: 0 auto;
         padding: 3%;
     }
-    #techskills li {
+    .highlight-list li {
         padding: 1%;
     }
     img {
