@@ -5,30 +5,30 @@
 	<title>Karl Morand</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="css/skeleton-css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/flexcss.css">
 	<!-- Social icons Designed by Freepik and distributed by Flaticon - http://www.freepik.com/ -->
 </head>
 
 <body>
 	<header>
-		<div id="logo">
-			KARL MORAND
-		</div>
-	</header>
+		<ul id="header-left" class="flex-item">
+			<li class="logo" id="karl">KARL</li>
+			<li class="logo" id="morand">MORAND</li>
+				<li class="contact-img">
+					<a href="https://github.com/karlmorand" ><img  src="img/png/github-logo.png" alt="" /></a>
+				</li>
+				<li class="contact-img">
+					<a href="https://www.linkedin.com/in/karlmorand" ><img  src="img/png/linkedin-button.png" alt="" /></a>
+				</li>
+				<li class="contact-img">
+					<a href="https://twitter.com/karlmorand" ><img  src="img/png/twitter-logo-button.png" alt="" /></a>
+				</li>
+				<li class="contact-img">
+					<a href="mailto:karljmorand@gmail.com" ><img  src="img/png/email.png" alt="" /></a>
+				</li>
+		</ul>
 
-
-	<div class="narrow-row">
-		<!-- <img class="img-wide" id="profile" src="img/kjm.jpg" alt="Picture of Karl Morand"/> -->
-
-		<div class="flex-item">
-
-			<p id="brand-text">
-				Team-focused web developer eager to solve problems. I relish interesting and unexpected challenges and view complex problems as an opportunity to grow as a developer.
-			</p>
-		</div>
-
-		<div class="flex-item">
-			<ul class="highlight-list">
+			<ul id="skills-list" class="highlight-list">
 				<li>Javascript</li>
 				<li>HTML5</li>
 				<li>CSS3</li>
@@ -40,8 +40,8 @@
 				<li>PostgreSQL</li>
 				<li>Node.js</li>
 			</ul>
-		</div>
-	</div>
+	</header>
+<main>
 	<div class="flex-item" id="current-projects">
 		<h1>Current Projects</h1>
 		<ul class="highlight-list">
@@ -65,11 +65,11 @@
 		</div>
 		<div class="box project">
 			<h3><a href="https://forum-proj.herokuapp.com/posts/">Forum</a></h3>
-				<img class="proj-img" src="img/forum.png" alt="Forum App" />
-				<div class="proj-desc">
-					<p>
-						Forum that allows users to securely create an account, make new posts, comment on other people's posts, and 'like' posts. Guests can see the content but they can't create content. The database is MongoDB and bcrypt is used for password encryption.
-					</p>
+			<img class="proj-img" src="img/forum.png" alt="Forum App" />
+			<div class="proj-desc">
+				<p>
+					Forum that allows users to securely create an account, make new posts, comment on other people's posts, and 'like' posts. Guests can see the content but they can't create content. The database is MongoDB and bcrypt is used for password encryption.
+				</p>
 			</div>
 		</div>
 	</div>
@@ -110,24 +110,24 @@
 		</p>
 	</div>
 
-	<h1 id="contact">Contact</h1>
-	<div class="contact">
-
-
-		<a href="https://github.com/karlmorand"><img src="img/png/github-logo.png" alt="" /></a>
-		<a href="https://www.linkedin.com/in/karlmorand"><img src="img/png/linkedin-button.png" alt="" /></a>
-		<a href="https://twitter.com/karlmorand"><img src="img/png/twitter-logo-button.png" alt="" /></a>
-		<a href="mailto:karljmorand@gmail.com"><img src="img/png/email.png" alt="" /></a>
-	</div>
+	</main>
 </body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<!-- TODO: Un Comment-out the Google Analytics code -->
+<!-- <script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-83560601-1', 'auto');
-  ga('send', 'pageview');
+	ga('create', 'UA-83560601-1', 'auto');
+	ga('send', 'pageview');
+</script> -->
 
-</script>
 </html>

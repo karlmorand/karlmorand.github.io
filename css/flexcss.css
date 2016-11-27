@@ -32,20 +32,11 @@ h3 {
     margin: 0;
 }
 
-#logo {
+.logo {
     text-align: center;
     font-size: 4em;
     font-family: Courier, monospace;
     color: black;
-}
-
-#brand-text {
-    font-family: Courier, monospace;
-    font-size: 1.2em;
-    text-align: center;
-    background-color: rgba(250, 6, 6, 0.66);
-    padding: .5% 3%;
-    margin: 0 0 2% 0;
 }
 
 .highlight-list li {
@@ -80,23 +71,62 @@ ul {
     margin-left: 8%;
 }
 
-li {
-    padding: .5% 0;
-}
-
 @media (min-width: 650px) {
     body {
-        max-width: 800px;
         margin: 0 auto;
         padding: 3%;
     }
-    .highlight-list li {
-        padding: 1%;
+    main{
+      max-width: 800px;
     }
-    img {
+    /*img {
       max-width: 60%;
       display: block;
       margin: 0 auto;
+    }*/
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20vh;
+    }
+    #skills-list{
+      width: 40vw;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .logo{
+      padding: 0;
+      margin: 0;
+      font-size: 7vw;
+      flex: 1 1 100%;
+    }
+    #header-left{
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 30vw;
+      margin:0;
+      padding:0;
+    }
+    #karl{
+      text-align: left;
+    }
+    #morand{
+      text-align: right;
+    }
+    .contact {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .contact-img{
+      flex: 1 1 20%;
+      max-width: 20%;
+    }
+    .highlight-list li {
+      font-size: 2vw;
+      flex-grow: 1;
     }
 
 }
