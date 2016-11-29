@@ -74,10 +74,11 @@ ul {
 @media (min-width: 650px) {
     body {
         margin: 0 auto;
-        padding: 3%;
+        padding: 0;
+        /*max-width: 1000px;*/
     }
     main{
-      max-width: 800px;
+      /*max-width: 800px;*/
     }
     /*img {
       max-width: 60%;
@@ -85,48 +86,79 @@ ul {
       margin: 0 auto;
     }*/
     header {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 20vh;
+      /*position: relative;*/
+      height: 30vh;
+      margin-bottom: 10vh;
+      padding:0 0 0 1%;
     }
     #skills-list{
       width: 40vw;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      position: absolute;
+      right:0;
+      justify-content: flex-end;
     }
     .logo{
       padding: 0;
       margin: 0;
-      font-size: 7vw;
+      font-size: 5rem;
       flex: 1 1 100%;
     }
     #header-left{
-      display: flex;
       list-style: none;
+      display: flex;
+      line-height: .7;
       flex-wrap: wrap;
       justify-content: space-between;
-      max-width: 30vw;
+      width: 40%;
+      max-width: 500px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      /*max-width: 30vw;*/
+      max-height: 100%;
       margin:0;
-      padding:0;
+      padding: 0 0 0 1%;
     }
     #karl{
       text-align: left;
+      display: inline-block;
+      padding-top: 1%;
+      padding-bottom: 3%;
     }
     #morand{
       text-align: right;
+      display: inline-block;
+      padding-bottom: 3%;
     }
     .contact {
       display: flex;
       justify-content: flex-start;
     }
     .contact-img{
-      flex: 1 1 20%;
-      max-width: 20%;
+      flex-basis: 10%;
     }
     .highlight-list li {
-      font-size: 2vw;
-      flex-grow: 1;
+      font-size: 1.3rem;
+      /*flex-grow: 1;*/
     }
+    .main-section{
+      width: 100%;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
 
+    }
+    .block{
+      max-width: 400px;
+      /*height: 400px;*/
+      /*flex: 1 1 20%;*/
+      margin-top: 1%;
+      background-color: red;
+    }
+    .block img {
+      max-width: 50%;
+    }
 }
+/* TODO: Set Max sizes for the fonts so they don't become HUGE */
