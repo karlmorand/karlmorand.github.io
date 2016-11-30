@@ -159,8 +159,8 @@ ul {
     }
     .main-section{
       width: 100%;
-      padding: 5%;
-      display:flex;
+      /*padding: 5%;*/
+      display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       animation: fadein 5s;
@@ -170,8 +170,9 @@ ul {
     }
     .block{
       max-width: 400px;
+      min-width: 300px;
       /*height: 400px;*/
-      flex:1 0 30%;
+      flex: 1;
       margin: 1%;
       background-color: rgb(117, 108, 108);
     }
@@ -199,6 +200,7 @@ ul {
     .block img {
       display: block;
       max-width: 50%;
+      min-height: 150px;
       margin: 1% auto;
     }
     .block-desc p {
