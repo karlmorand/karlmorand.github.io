@@ -1,0 +1,255 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #FDF6E3;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.block {
+    background-color: rgb(117, 108, 108);
+}
+
+.block-desc {
+    margin: 3%;
+    color: white;
+    padding: .5% 1%;
+    background-color: rgba(250, 6, 6, 0.5);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    border-radius: 20px;
+}
+.block-desc p {
+    margin: 2% 0;
+    line-height: 1.5;
+}
+
+.block ul {
+    padding: 1%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.block img {
+    display: block;
+    max-width: 50%;
+    margin: 1% auto;
+}
+
+.block h3 {
+    color: white;
+    font-size: 2.2rem;
+}
+
+.block a:hover {
+    border: none;
+    color: rgba(250, 6, 6, 0.5);
+}
+
+.block a {
+    border-bottom: 5px solid rgba(250, 6, 6, 0.5);
+    text-decoration: none;
+    color: white;
+    transition: all .5s ease;
+}
+
+.block {
+    max-width: 400px;
+    min-width: 300px;
+    /*height: 400px;*/
+    border-radius: 20px;
+    flex: 1;
+    margin: 1%;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.2em;
+    padding: 0 5%;
+}
+
+h1, h2, h3, h4 {
+    font-family: Courier, monospace;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+    padding: 0 0 2% 0;
+    margin: 0;
+}
+
+header {
+    /*height: 20vh;
+  margin-bottom: 5%;  */
+}
+
+#header-left {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/*#header-left{
+  animation: fadein 1s;
+  list-style: none;
+  display: flex;
+  line-height: .7;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin:0;
+  padding: 0 0 0 1%;
+}*/
+
+.logo {
+    text-align: center;
+    font-size: 4em;
+    font-family: Courier, monospace;
+    color: black;
+    flex: 1 0 100%;
+}
+
+.contact-img {
+    max-width: 15%;
+}
+
+.highlight-list li {
+    font-family: Courier, monospace;
+    font-size: 1.2em;
+    display: inline-block;
+    background-color: rgba(250, 6, 6, 0.66);
+    margin: 1%;
+    padding: 2%;
+    color: white;
+}
+
+.highlight-list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.box {
+    background-color: rgba(241, 237, 225, 1);
+    margin: 5% 0;
+    padding: 2% 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+
+ul {
+    margin-left: 8%;
+}
+
+@media (min-width: 650px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    #header-left {
+        line-height: .7;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 40%;
+        max-height: 100%;
+        margin: 0;
+        padding: 0 0 0 1%;
+    }
+    #skills-list {
+        animation: fadein 2s;
+        width: 40vw;
+        display: flex;
+        /*flex-grow: 0;*/
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .logo {
+        padding: 0;
+        margin: 0;
+        font-size: 5rem;
+        flex: 1 1 100%;
+    }
+    #karl {
+        text-align: left;
+        display: inline-block;
+        padding-top: 1%;
+        padding-bottom: 3%;
+    }
+    #morand {
+        text-align: right;
+        display: inline-block;
+        padding-bottom: 3%;
+    }
+    .contact {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .contact-img {
+        flex-basis: 10%;
+        border-radius: 50%;
+        transition: all .3s ease;
+    }
+    .contact-img:hover {
+        background-color: rgba(250, 6, 6, 0.5);
+    }
+    .highlight-list li {
+        font-size: 1.3rem;
+        /*flex-grow: 1;*/
+    }
+    .main-section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        animation: fadein 4s;
+        max-width: 1400px;
+        margin: 0 auto;
+        align-items: flex-start;
+    }
+    /*.block{
+      max-width: 400px;
+      min-width: 300px;
+      /*height: 400px;*/
+    border-radius: 20px;
+    flex: 1;
+    margin: 1%;
+}
+
+*/
+
+.block img {
+    min-height: 150px;
+}
+
+}
