@@ -1,4 +1,13 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@keyframes fadein {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
 body {
     background-color: #FDF6E3;
 }
@@ -87,8 +96,8 @@ ul {
     }*/
     header {
       /*position: relative;*/
-      height: 30vh;
-      margin-bottom: 10vh;
+      animation: fadein 2s;
+      height: 20vh;
       padding:0 0 0 1%;
     }
     #skills-list{
@@ -138,6 +147,11 @@ ul {
     }
     .contact-img{
       flex-basis: 10%;
+      border-radius: 50%;
+      transition: all .3s ease;
+    }
+    .contact-img:hover{
+      background-color: rgba(250, 6, 6, 0.5);
     }
     .highlight-list li {
       font-size: 1.3rem;
@@ -145,20 +159,52 @@ ul {
     }
     .main-section{
       width: 100%;
+      padding: 5%;
       display:flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
+      animation: fadein 5s;
+      max-width: 1400px;
+      margin: 0 auto;
 
     }
     .block{
       max-width: 400px;
       /*height: 400px;*/
-      /*flex: 1 1 20%;*/
-      margin-top: 1%;
-      background-color: red;
+      flex:1 0 30%;
+      margin: 1%;
+      background-color: rgb(117, 108, 108);
+    }
+    .block h3 {
+      color: white;
+    }
+    .block a:hover {
+      border: none;
+      color: rgba(250, 6, 6, 0.5);
+    }
+    .block a {
+      border-bottom: 5px solid rgba(250, 6, 6, 0.5);
+      text-decoration: none;
+      color: white;
+      transition: all .2s ease;
+    }
+    .block-desc {
+      margin: 3%;
+      color: white;
+      padding: .5% 1%;
+      background-color: rgba(250, 6, 6, 0.5);
+      font-size: 1.2rem;
+      line-height: 1.5;
     }
     .block img {
+      display: block;
       max-width: 50%;
+      margin: 1% auto;
     }
+    .block-desc p {
+      margin: 2% 0;
+      line-height: 1.5;
+    }
+
 }
 /* TODO: Set Max sizes for the fonts so they don't become HUGE */
